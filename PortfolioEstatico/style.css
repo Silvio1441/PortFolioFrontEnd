@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Poppins:wght@400;500;600;700&family=Smooch&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background: #000;
+}
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* navbar styling*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: ubuntu, sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky {
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span {
+    color: crimson;
+}
+.navbar.sticky .logo span {
+    color: #fff;
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+}
+.navbar .log i {
+    color: #fff;
+}
+.navbar .log a {
+    color: #fff;
+    margin-left: 5px;
+}
+
+/*menu-btn stylin*/
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+/*Home section styling*/
+.home {
+    display: flex;
+    background: url("Images/lap1.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: ubuntu, sans-serif;
+}
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+.sil {
+    position: relative;
+    top: 120px;
+    left: -60px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+.home .home-content {
+    position: relative;
+    top: 120px;
+    left: -60px;
+}
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span {
+    color: crimson;
+    font-weight: 500;
+}
+
+
+/*Responsive media query start*/
+
+
+#about {
+    padding: 100px 0;
+    color: #ababab;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about-col-1 {
+    flex-basis: 25%;
+}
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2 {
+    flex-basis: 60%;
+}
+.sub-tittle {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-tittles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links {
+    margin-right: 50px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links p span {
+    font-weight: 1200;
+}
+
+.contain {
+    width: 100%;
+    height: 600px;
+      top: 60px;
+      left:60%;
+      position: relative;
+      text-align: center;
+      transform: translate(-50%, -50%);
+  }
+  .ui-widgets {
+      position: relative;
+      display: inline-block;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 9rem;
+      margin:1.5rem;
+      border: 0.6rem solid blue;
+      border-top-color: blue;
+      border-left-color: blue;
+      border-right-color: white;
+      border-bottom-color: white ;
+      text-align: center;
+      box-sizing: border-box;
+  }
+      .ui-widgets:nth-child(2) {
+          border-top-color: rgb(147, 227, 27) ;
+          border-right-color: rgb(147, 227, 27);
+          border-left-color: rgb(147, 227, 27);
+          border-bottom-color: white;
+      }
+      .ui-widgets:nth-child(3) {
+          border-top-color: red;
+          border-right-color: red;
+          border-left-color: red;
+          border-bottom-color: white;
+      }
+      .ui-widgets:nth-child(4) {
+        border-top-color: violet;
+        border-right-color: white;
+        border-left-color: violet;
+        border-bottom-color: white;
+    }
+    .ui-widgets:nth-child(5) {
+        border-top-color: yellow;
+        border-right-color: white;
+        border-left-color: yellow;
+        border-bottom-color: white;
+    }
+
+  .ui-widgets .ui-values {
+      top: 30px;
+      position: absolute;
+      left: 10px;
+      right: 0;
+      font-weight: 700;
+      font-size: 1.0rem;
+  }
+  .ui-widgets .ui-labels {
+      left: 0;
+      bottom: -30px;
+      text-shadow: 0 0 4px grey;
+      color:white;
+      position: absolute;
+      width: 100%;
+      font-size: 12px;
+  }
+
+  #services {
+    padding: 80px 0;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: backgound 0.5s transform 0.5s;
+}
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div p {
+    color: #fff;
+}
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+#portfolio {
+    padding: 70px;
+}
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 30px;
+}
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;color: #fff;
+}
+.work img {
+    width: 65%;
+    border-radius: 10px;
+    display: block;
+}
+
+#contact {
+    padding: 80px;
+}
+
+.container-form {
+    width: 100%;
+    height: 600px;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 20px;
+}
+
+.container-form h2 {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 60px;
+}
+
+.container-form p {
+    font-size: 17;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a {
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 400;
+}
+.container-form i {
+    color: crimson;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: 0px;
+}
+.container-form form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    max-height: 150px;
+    min-height: 140px;
+    border-radius: 5px;
+}
+.container-form .btn-enviar {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 800;
+    border: none;
+    outline: 0px;
+    background: crimson;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover {
+    background: rgb(246, 117, 143);
+}
+
+.form-login {
+    width: 400px;
+    height: 360px;
+    background: grey;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    padding: 40px 30px;
+    color: #fff;
+    border-radius: 10px;
+}
+.form-login h3 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+.controls {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.buttons {
+    width: 100%;
+    height: 40px;
+    background: crimson;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.form-login p {
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+.form-login a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
